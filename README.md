@@ -28,3 +28,9 @@ dotnet watch
 ```
 
 **Shaping the Data to return**
+
+**stoping postgres port**
+```
+sudo lsof -i :5432
+sudo pkill -u postgres
+```
