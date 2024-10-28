@@ -34,3 +34,5 @@ dotnet watch
 sudo lsof -i :5432
 sudo pkill -u postgres
 ```
+
+**RabbitMq**
