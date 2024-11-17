@@ -25,6 +25,7 @@ namespace SearchService.Consumers
                             .ModifyOnly(x => new {
                                     x.Color,
                                     x.Make,
+                                    x.Model,
                                     x.Year,
                                     x.Mileage,
                             }, item).ExecuteAsync();

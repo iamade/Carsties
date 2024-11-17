@@ -36,3 +36,12 @@ sudo pkill -u postgres
 ```
 
 **RabbitMq**
+
+**buildin docker**
+```
+docker compose build identity-svc
+docker compose up -d
+```
+
+**remove migrations**
+ dotnet ef migrations remove  
