@@ -1,3 +1,8 @@
+**to run the app**
+'''
+docker compose up -d
+cd into  the service and do dotnet run
+'''
 **docker**
 ```
 docker compose up -d
