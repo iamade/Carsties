@@ -1,52 +1,48 @@
-**to run the app**
-'''
-docker compose up -d
-cd into  the service and do dotnet run
-'''
-**docker**
-```
-docker compose up -d
-```
-**Initial Create Migrations**
-```
-dotnet ef migrations add "InitialCreate" -o Data/Migrations
-```
+# Carsties - Car Auction Platform
 
-**update database**
-```
-dotnet ef database update
-```
+Carsties is a modern car auction platform built using a microservices architecture. The application is fully containerized and orchestrated with Docker, utilizing YARP as the API gateway for efficient request routing.
 
-**seed data**
-```
-Data was seeded using Dbinitializer
-```
+## Table of Contents
+- [Features](#features)
+- [Architecture](#architecture)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Microservices Overview](#microservices-overview)
+- [API Gateway](#api-gateway)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
 
-**drop db**
-```
-dotnet ef database drop
-```
+## Features
+- Real-time car auctions: Users can bid on vehicles in real time.
+- Microservices-based: Each functionality is developed as an independent service.
+- Scalability: Easily scalable using containerized services.
+- Secure transactions: Ensuring safe and reliable payments.
+- API Gateway: YARP-based gateway for routing and load balancing.
+- Dockerized: Fully containerized for seamless deployment.
 
-**activity to pupolate DB**
-```
-dotnet watch
-```
+## Architecture
+Carsties follows a microservices architecture, where different services handle specific functionalities such as user management, auction handling, bidding, payments, and notifications. YARP serves as the API gateway, routing requests to the appropriate services.
 
-**Shaping the Data to return**
+## Technologies Used
+- **Backend**: .NET Core
+- **Frontend**: React.js (NextJS)
+- **Database**: PostgreSQL, MongoDB
+- **API Gateway**: YARP
+- **Containerization**: Docker, Kubernetes (optional for orchestration)
+- **Messaging**: RabbitMQ
+- **Authentication**: JWT, OAuth 2.0
 
-**stoping postgres port**
-```
-sudo lsof -i :5432
-sudo pkill -u postgres
-```
+## Getting Started
 
-**RabbitMq**
+### Prerequisites
+- Docker & Docker Compose
+- .NET SDK
+- node & npm/yarn
+- PostgreSQL/MongoDB installed (or use Docker containers)
 
-**buildin docker**
-```
-docker compose build identity-svc
-docker compose up -d
-```
-
-**remove migrations**
- dotnet ef migrations remove  
+### Installation
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/carsties.git
+cd carsties
