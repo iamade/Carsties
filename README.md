@@ -46,3 +46,16 @@ Carsties follows a microservices architecture, where different services handle s
 ```bash
 git clone https://github.com/yourusername/carsties.git
 cd carsties
+```
+
+### Starting the application
+2. Start the services using Docker Compose:
+```bash
+docker-compose up --build
+```
+
+### Access the application:
+``` 
+- **API Gateway**: http://localhost:6001
+- Frontend: http://localhost:3000
+```
