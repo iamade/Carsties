@@ -55,7 +55,6 @@ docker-compose up --build
 ```
 
 ### Access the application:
-``` 
+
 - **API Gateway**: http://localhost:6001
-- Frontend: http://localhost:3000
-```
+- **Frontend**: http://localhost:3000
