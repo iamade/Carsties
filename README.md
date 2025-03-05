@@ -44,7 +44,7 @@ Carsties follows a microservices architecture, where different services handle s
 ### Installation
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/carsties.git
+git clone https://github.com/iamade/carsties.git
 cd carsties
 ```
 
